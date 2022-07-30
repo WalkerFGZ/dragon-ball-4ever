@@ -1,0 +1,132 @@
+:root {
+    /* COLORS*/
+    --mainColor-Yellow: #FFB434;
+    --mainColor-DarkBlue: #21242C;
+    --mainColor-White: #F5F6F8;
+    --secondaryColor-White: #e0e0e1;
+
+    /* FONTS*/
+    --font-Titles: 'Noto Sans', sans-serif;
+    --font-Texts:'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    background: repeating-linear-gradient(to right, #072083 0%, #F85B1A 100%);
+}
+
+nav p {
+    font-size: 30px;
+    font-family: var(--font-Titles);
+    padding: 7px 0 7px 30px;
+    font-weight: bold;
+    color: rgb(255 255 255 / 98%);
+}
+
+.serie-description {
+    display: flex;
+    justify-content: center; 
+    height: 100%;
+    margin-top: 30px;
+}
+
+.serie-description--container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    max-width: 1200px;
+    max-height: 30.75rem;
+}
+
+.serie-description--left {
+    padding: 20px;
+}
+
+.serie-description--left img {
+    width: 100%;
+    height: 77%;
+    min-height: 200px;
+    border-radius: 6px;
+}
+
+.serie-description--right {
+    padding: 20px 20px 20px 0;
+}
+
+.serie-description--header h1{
+    font-size: 30px;
+    font-family: var(--font-Titles);
+}
+
+.serie-description--header p{
+    font-family: var(--font-Texts);
+    line-height: 25px;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.serie-description-container--meta {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.serie-description-left--meta ul li{
+    font-family: var(--font-Titles);
+    font-size: 16px;
+    list-style: square;
+    margin-top: 10px;
+}
+
+.serie-description-right--meta ul li{
+    font-family: var(--font-Titles);
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+    color: #F85B1A
+}
+
+
+.episodes-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.episodes-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.episodes-cards--container {
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.episodes-cards--container article video {
+    max-width: 260px;
+    border-radius: 10px;
+
+}
+
+
+
